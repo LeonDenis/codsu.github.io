@@ -22,7 +22,11 @@
             //Redimencionador();
 
             //$(window).resize(function () { Redimencionador(); });
+            
+            NoSmart();
 
+            $(window).resize(function () { NoSmart(); });
+            
         })
 
         function Redimencionador() {
@@ -34,6 +38,20 @@
             $('#mdl_sjvlt_tm').width($('body').width() - 200);
 
             $('#mdl_bfvlt_tm').width($('body').width() - 200);
+
+        }
+        
+        function NoSmart() {
+
+            if ($(window).width() < 385) {
+
+                $('#spn_linhas').html('<br /><br />');
+
+            } else {
+
+                $('#spn_linhas').html('');
+
+            }
 
         }
 
@@ -52,6 +70,7 @@
 
 <body>
     <br /><br />
+    <span id="spn_linhas"></span>
     <nav class="navbar main-menu navbar-default navbar-fixed-top nav-bar-shadowed">
         <div class="container">
             <div class="menu-content">
