@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Código do Sucesso</title>
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.stickit.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            Redimencionador();
+
+            $(window).resize(function () { Redimencionador(); });
+
+        })
+
+        function Redimencionador() {
+
+            $('#resize_bf').resizable({ handles: 'e, w' });
+
+            $('#resize_sj').resizable({ handles: 'e, w' });
+
+            $('#mdl_sjvlt_tm').width($('body').width() - 200);
+
+            $('#mdl_bfvlt_tm').width($('body').width() - 200);
+
+        }
+
+    </script>
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.transitions.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br /><br />
+    <nav class="navbar main-menu navbar-default navbar-fixed-top nav-bar-shadowed">
+        <div class="container">
+            <div class="menu-content">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Abrir Navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="" style="width: 220px;">
+                    </a>
+                </div>
+
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">SOBRE NÓS </a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                        <li class="menu-item-has-children">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                Junte-se a nós
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Cadastrar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="i_con">
+                        <a href="#"><i class="active fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" data-sticky_column>
+                    <div class="primary-sidebar">
+                        <aside class="widget about-me-widget">
+                            <div class="about-me-img">
+
+                                <div class="about-me-content text-center">
+                                    <img src="assets/images/me.png" alt="" class="img-me">
+
+                                    <h3 class="text-uppercase">Código do Sucesso</h3>
+
+                                    <p>Somos uma Empresa que preza pelo bem do mundo. Venha fazer a sua parte, ajude o próximo. Se Voluntarie já !</p>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="text-center text-center">
+                                    <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="s-linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside class="widget news-letter" style="box-shadow: 5px 5px 5px rgba(0,0,0, 0.2) !important;">
+                            <h3 class="widget-title text-uppercase text-center">Mais informações</h3>
+
+                            <form action="#" required>
+                                <input type="email" placeholder="Seu endereço email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                <input type="submit" value="Receber mais informações"
+                                       class="text-uppercase text-center btn btn-subscribe">
+                            </form>
+
+                        </aside>
+
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <article class="post">
+                        <div class="post-thumb" style="box-shadow: 5px 5px 5px rgba(0,0,0, 0.5);">
+                            <div id="crsl_topo" class="carousel slide" data-ride="carousel" style="max-height: 498px;">
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#crsl_topo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#crsl_topo" data-slide-to="1"></li>
+                                    <li data-target="#crsl_topo" data-slide-to="2"></li>
+                                </ol>
+
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="carousel-caption carousel-caption-black">
+                                            <h5>Pois se o eu é odioso, amar ao próximo como a si mesmo torna-se uma atroz ironia.</h5>
+                                        </div>
+                                        <img src="assets/images/volunt_1.jpg" style="width: 100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-caption carousel-caption-black">
+                                            <h5>Virtude sem caridade não passa de nome.</h5>
+                                        </div>
+                                        <img src="assets/images/volunt_2.png" style="width: 100%;">
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="carousel-caption carousel-caption-black">
+                                            <h5>Não existe outra via para a solidariedade humana senão a procura e o respeito da dignidade individual.</h5>
+                                        </div>
+                                        <img src="assets/images/volunt_3.jpg" style="width: 100%;">
+                                    </div>
+                                </div>
+
+                                <a class="left carousel-control" href="#crsl_topo" data-slide="prev" title="Anterior">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+
+                                <a class="right carousel-control" href="#crsl_topo" data-slide="next" title="Próximo">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="post-thumb" style="box-shadow: 5px 0px 5px rgba(0,0,0, 0.2);">
+                            <iframe style="width: 100%; height: 400px;"
+                                    src="https://www.youtube.com/embed/Ts7E8O4M1k0"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="post-content">
+                            <header class="entry-header text-center text-uppercase">
+                                <h6><p> Video por Darlan</p></h6>
+
+                                <h1 class="entry-title"><a href="#" data-toggle="modal" data-target="#mdl_benefvolunt">SEJA VOLUNTÁRIO</a></h1>
+
+
+                            </header>
+                            <div class="entry-content">
+                                <p>
+                                    O trabalho voluntário edifica o homem, faz bem á outras pessoas inclusive ao indivíduo que está efetuando o trabalho,
+                                    o trabalho voluntário não é como uma obrigação é como o próprio nome já diz.
+                                    O voluntariado é um trabalho espontâneo onde não há nenhuma remuneração, é como um grupo ou grupos de pessoas que querem
+                                    ajudar aos que precisam só que de uma forma organizada como se fossem uma empresa.
+                                </p>
+
+                                <div class="btn-continue-reading text-center text-uppercase">
+                                    <a href="#" id="op_mdlbfvlt" class="more-link" data-toggle="modal" data-target="#mdl_benefvolunt">CONTINUE LENDO</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <span class="social-share-title pull-left text-capitalize">Por <a href="#">Leon</a> Em 3 de Abril, 2017</span>
+                                <ul class="text-center pull-right">
+                                    <li><a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="s-linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <div class="post-thumb" style="box-shadow: 5px 0px 5px rgba(0,0,0, 0.2);">
+                            <img src="assets/images/voluntarios.jpg" />
+                        </div>
+                        <div class="post-content">
+                            <header class="entry-header text-center text-uppercase">
+
+                                <h1 class="entry-title"><a href="#" data-toggle="modal" data-target="#mdl_sejavolunt">FORMAS DE VOLUNTARIADO</a></h1>
+
+                            </header>
+                            <div class="entry-content">
+                                <p>
+                                    Já pensou em ser um voluntário, mas não pode ir à instituição presencialmente? Vai viajar e
+                                    quer fazer a diferença na cidade que escolheu para passear, mas não sabe como? Hoje existem
+                                    diferentes formas para atuar como voluntário.
+                                </p>
+
+                                <div class="btn-continue-reading text-center text-uppercase">
+                                    <a href="#" id="op_mdlsjvlt" class="more-link" data-toggle="modal" data-target="#mdl_sejavolunt">CONTINUE LENDO</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <span class="social-share-title pull-left text-capitalize">Por <a href="#">Leon</a> Em 1 de Maio, 2017</span>
+                                <ul class="text-center pull-right">
+                                    <li><a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="s-linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-widget-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <aside class="footer-widget">
+                        <div class="about-img">
+                            <img src="assets/images/footer-logo.png" style="width: 250px;">
+                        </div>
+                        <div class="about-content">
+                            O grupo Código do Sucesso é responsável por gerenciar uma das maiores redes de voluntariados do Brasil,
+                            nós presamos pelo bem estar da população brasileira.
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-4">
+                    <aside class="footer-widget">
+                        <div class="address">
+                            <h4 class="text-uppercase">Contato</h4>
+
+                            <p> Telefone: +55 (34) 3219-7791</p>
+
+                            <p> R. José Andraus, 164 - Martins, Uberlândia - MG</p>
+
+                            <p>codigosucesso@gmail.com</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mdl_benefvolunt" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="mdl_bfvlt_tm">
+            <div class="modal-content" id="resize_bf">
+                <div class="modal-header modal-header-gray">
+                    <button type="button" class="close" data-dismiss="modal" title="Fechar Janela">&times;</button>
+                    <h4 class="modal-title">BENEFICIOS DO TRABALHO VOLUNTÁRIO</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <center><img src="assets/images/volunt_modal.jpg" class="modal-inner-images" /></center>
+                        <br />
+                        <xlarge><b>Que tal viver mais e com mais saúde? A ciência comprova: quem faz um trabalho voluntário ganha muito em bem-estar e felicidade.</b></xlarge>
+                        <br /><br />
+                        O que você faz bem pode fazer bem a alguém. Esse é o espírito do trabalho voluntário, que significa colocar à disposição da sociedade um talento nosso. Mas essa história, que já seria bonita se terminasse aí, vai além: as pessoas que atuam como voluntárias movidas pelo amor (e não para ganhar ponto no currículo, por exemplo) vivem em média quatro anos mais, segundo estudo da Universidade de Michigan (EUA), e com melhor qualidade de vida, afirma o pesquisador americano Allan Luks, no livro The Healing Power of Doing Good (O Poder Curativo de Fazer o Bem, sem tradução para o português).
+                        <br /><br />
+                        “Quem realiza pelo menos quatro horas de trabalho voluntário por mês tem dez vezes mais chances de ter uma boa saúde do que quem não voluntaria”, disse Lukz. A explicação? O voluntário vivencia um poderoso sentimento de satisfação (em inglês, helpers high), resultado da diminuição do stress e da liberação de endorfinas, neurotransmissores que provocam sensação de felicidade. “A pessoa se sente valorizada, útil, com boa autoestima. Tudo isso por saber que tem algo para contribuir”, explica a psicóloga Cleonice de Andrade (SC).
+                        <br /><br /><b>No caminho da solidariedade</b><br />
+                        Todo mundo pode ser voluntário – basta disposição, boa vontade e comprometimento. Mas por onde começar ? Por duas perguntas que você dirige a si mesma: o que eu sei fazer de melhor que me traz satisfação? E como posso utilizar minhas habilidades para ajudar a quem precisa? Enumere o que lhe traz bem-estar e os seus talentos, defina sua disponibilidade de tempo e então busque um trabalho que chame a sua atenção e seja coerente com os seus valores pessoais, ensina Cleonice. Mesmo quem tem pouco tempo pode encontrar formas de atuar. É o que fazem 67% dos voluntários brasileiros (dado de 2011 do Ibope) que trabalham fora em atividades remuneradas.
+                    </p>
+                </div>
+                <div class="modal-footer modal-footer-gray">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Fechar Janela">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mdl_sejavolunt" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="mdl_sjvlt_tm">
+            <div class="modal-content" id="resize_sj">
+                <div class="modal-header modal-header-gray">
+                    <button type="button" class="close" data-dismiss="modal" title="Fechar Janela">&times;</button>
+                    <h4 class="modal-title">FORMAS DE VONLUNTARIADO</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Já pensou em ser um voluntário, mas não pode ir à instituição presencialmente? Vai viajar e quer fazer a diferença na cidade que escolheu para passear, mas não sabe como? Hoje existem diferentes formas para atuar como voluntário.
+                        <br /><br /><b>Voluntariado presencial</b><br />
+                        Este tipo de voluntariado é um dos mais comuns nos dias de hoje. Tudo porque o voluntário, já acordado pelo termo de adesão, precisa estar presente na instituição para realizar suas atividades voluntárias. Ainda assim, existem duas formas de voluntariado presencial: o contínuo, em que o voluntário cria vínculos com a instituição, conhece a realidade de perto e acompanha o desenvolvimento do grupo, como o quadro de um enfermo ao contar histórias, o nível de aprendizado das crianças a qual ensina, entre outros; e o pontual, em que os voluntários tem contato com a instituição, mas o tempo de sua prática voluntária reduzido. As ações mais comuns de trabalho voluntário pontual são mutirões de pintura, limpeza, plantio de grama ou qualquer outra ação específica e acordada previamente.
+                        <br /><br /><b>Voluntariado online ou à distância</b><br />
+                        Bastante comum, o voluntariado à distância ou on-line não exige a presença física na instituição. Desde que acordado previamente e também assegurado pelo termo, o trabalho feito de casa pode ser entregue através dos meios eletrônicos ou com uma rápida visita. No CAV são divulgadas vagas para profissionais de comunicação, contabilistas, assessorias administrativas, estatísticos, trabalhos manuais ou artesanatos, que contribuem para a instituição com uma parcela significativa, mesmo atuando em home office. Este é o meu caso com o CAV!
+                        <br /><br /><b>Programas Empresariais de Voluntariado</b><br />
+                        Esta forma de atuação é uma das que mais crescem atualmente. Apoiados pela empresa, os colaboradores mobilizam forças em prol do social. As empresas podem apoiar de diversas formas, estruturando o programa de voluntariado, divulgando as ações voluntárias, cedendo espaços para discussão das ações, apoiando na logística, capacitando os colaboradores para as ações ou até mesmo para o tema, como o Ciclo de Desenvolvimento: Voluntários Transformadores realizado pelo CAV.
+                    </p>
+                </div>
+                <div class="modal-footer modal-footer-gray">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Fechar Janela">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
