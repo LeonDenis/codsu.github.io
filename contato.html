@@ -28,17 +28,22 @@
 
             if ($(window).width() < 385) {
 
-                $('#spn_linhas').html('<br /><br />');
+                //$('#spn_linhas').html('<br />');
+
+                $('#img_logo').attr('style', 'width: ' + ($(window).width() - 170) + 'px');
 
             } else {
 
-                $('#spn_linhas').html('');
+                //$('#spn_linhas').html('');
+
+                $('#img_logo').attr('style', 'width: 220px');
 
             }
 
         }
 
     </script>
+    
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
