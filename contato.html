@@ -13,6 +13,32 @@
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="assets/js/menu.js"></script>
+    
+    <script type="text/javascript">
+
+        $(function () {
+
+            NoSmart();
+
+            $(window).resize(function () { NoSmart(); });
+
+        })
+
+        function NoSmart() {
+
+            if ($(window).width() < 385) {
+
+                $('#spn_linhas').html('<br /><br />');
+
+            } else {
+
+                $('#spn_linhas').html('');
+
+            }
+
+        }
+
+    </script>
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
@@ -25,6 +51,7 @@
 
 <body>
     <br /><br />
+    <span id="spn_linhas"></span>
     <nav class="navbar main-menu navbar-default navbar-fixed-top nav-bar-shadowed ">
         <div class="container">
             <div class="menu-content">
