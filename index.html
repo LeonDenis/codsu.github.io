@@ -7,60 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <title>Código do Sucesso</title>
-    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.stickit.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
-    <script type="text/javascript" src="assets/js/menu.js"></script>
-
-    <script type="text/javascript">
-
-        $(function () {
-
-            //Redimencionador();
-
-            //$(window).resize(function () { Redimencionador(); });
-            
-            NoSmart();
-
-            $(window).resize(function () { NoSmart(); });
-            
-        })
-
-        function Redimencionador() {
-
-            $('#resize_bf').resizable({ handles: 'e, w' });
-
-            $('#resize_sj').resizable({ handles: 'e, w' });
-
-            $('#mdl_sjvlt_tm').width($('body').width() - 200);
-
-            $('#mdl_bfvlt_tm').width($('body').width() - 200);
-
-        }
-        
-        function NoSmart() {
-
-            if ($(window).width() < 385) {
-
-                //$('#spn_linhas').html('<br />');
-
-                $('#img_logo').attr('style', 'width: ' + ($(window).width() - 170) + 'px');
-
-            } else {
-
-                //$('#spn_linhas').html('');
-
-                $('#img_logo').attr('style', 'width: 220px');
-
-            }
-
-        }
-
-    </script>
-
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
@@ -106,6 +52,7 @@
                             <ul class="sub-menu">
                                 <li><a href="#">Login</a></li>
                                 <li><a href="#">Cadastrar</a></li>
+                                <li><a href="/assets/downloadable/fonte-trabalho-voluntariado.zip" download>Download</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -368,5 +315,58 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.stickit.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            //Redimencionador();
+
+            //$(window).resize(function () { Redimencionador(); });
+            
+            NoSmart();
+
+            $(window).resize(function () { NoSmart(); });
+            
+        })
+
+        function Redimencionador() {
+
+            $('#resize_bf').resizable({ handles: 'e, w' });
+
+            $('#resize_sj').resizable({ handles: 'e, w' });
+
+            $('#mdl_sjvlt_tm').width($('body').width() - 200);
+
+            $('#mdl_bfvlt_tm').width($('body').width() - 200);
+
+        }
+        
+        function NoSmart() {
+
+            if ($(window).width() < 385) {
+
+                //$('#spn_linhas').html('<br />');
+
+                $('#img_logo').attr('style', 'width: ' + ($(window).width() - 170) + 'px');
+
+            } else {
+
+                //$('#spn_linhas').html('');
+
+                $('#img_logo').attr('style', 'width: 220px');
+
+            }
+
+        }
+
+    </script>
 </body>
 </html>
