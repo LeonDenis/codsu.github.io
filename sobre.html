@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,37 +19,21 @@
 
         $(function () {
 
-            //Redimencionador();
-
-            //$(window).resize(function () { Redimencionador(); });
-
             NoSmart();
 
             $(window).resize(function () { NoSmart(); });
 
         })
-
-        function Redimencionador() {
-
-            $('#resize_bf').resizable({ handles: 'e, w' });
-
-            $('#resize_sj').resizable({ handles: 'e, w' });
-
-            $('#mdl_sjvlt_tm').width($('body').width() - 200);
-
-            $('#mdl_bfvlt_tm').width($('body').width() - 200);
-
-        }
-
+        
         function NoSmart() {
 
             if ($(window).width() < 385) {
 
-                $('#spn_linhas').html('<br /><br />');
+                $('#img_logo').attr('style', 'width: ' + ($(window).width() - 170) + 'px');
 
             } else {
 
-                $('#spn_linhas').html('');
+                $('#img_logo').attr('style', 'width: 220px');
 
             }
 
@@ -84,7 +68,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="" style="width: 220px;">
+                        <img src="assets/images/logo.png" id="img_logo" style="width: 220px">
                     </a>
                 </div>
 
