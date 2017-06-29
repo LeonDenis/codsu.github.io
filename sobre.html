@@ -23,8 +23,21 @@
 
             $(window).resize(function () { NoSmart(); });
 
+
+            $('#btnLogin').on('click', function () {
+
+                $('#mdl_login').modal().show();
+
+            });
+
+            $('#btnCad').on('click', function () {
+
+                $('#mdl_cad').modal().show();
+
+            });
+
         })
-        
+
         function NoSmart() {
 
             if ($(window).width() < 385) {
@@ -37,6 +50,78 @@
 
             }
 
+        }
+
+        function Logar() {
+
+            var lgn = document.getElementById('txtlgn');
+            var srn = document.getElementById('txtsrn');
+            var msg = document.getElementById('msgspn');
+
+            if (lgn.value.trim() == '') {
+                lgn.focus(); return;
+            }
+
+            if (srn.value.trim() == '') {
+                srn.focus(); return;
+            }
+
+            if (lgn.value.trim() == 'codsu' && srn.value.trim() == '123') {
+
+                msg.innerHTML = "Logado com Sucesso !";
+
+                $('#mdl_mensagem').modal().show();
+
+                msg.setAttribute('style', 'color: green;');
+
+            } else {
+
+                msg.innerHTML = "Acesso Negado !";
+
+                msg.setAttribute('style', 'color: red;');
+
+                $('#mdl_mensagem').modal().show();
+            }
+
+            lgn.value = '';
+            srn.value = '';
+
+        }
+
+        function Cadastrar() {
+
+            var lgn = document.getElementById('txtlgnc');
+            var srna = document.getElementById('txtsrnca');
+            var srnb = document.getElementById('txtsrncb');
+            var msg = document.getElementById('msgspn');
+
+
+            if (lgn.value.trim() == '') {
+                lgn.focus(); return;
+            }
+
+            if (srna.value.trim() == '') {
+                srna.focus(); return;
+            }
+
+            if (srnb.value.trim() == '') {
+                srnb.focus(); return;
+            }
+
+            if (srna.value.trim() != srnb.value.trim()) {
+                msg.innerHTML = "As senhas precisão ser iguais !";
+                msg.setAttribute('style', 'color: red;');
+                $('#mdl_mensagem').modal().show();
+                return;
+            }
+
+            msg.innerHTML = "Cadastro efetuado com Sucesso !";
+            msg.setAttribute('style', 'color: green;');
+            $('#mdl_mensagem').modal().show();
+
+            lgn.value = '';
+            srna.value = '';
+            srnb.value = '';
         }
 
     </script>
@@ -84,9 +169,8 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="sub-menu">
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Cadastrar</a></li>
-                                <li><a href="/assets/downloadable/fonte-trabalho-voluntariado.zip" download>Download</a></li>
+                                <li><a href="#" id="btnLogin">Login</a></li>
+                                <li><a href="#" id="btnCad">Cadastrar</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -221,6 +305,91 @@
                 </div>
                 <div class="modal-footer modal-footer-gray">
                     <button type="button" class="btn btn-danger" data-dismiss="modal" title="Fechar Janela">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mdl_login" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="mdl_sjvlt_tm">
+            <div class="modal-content" id="resize_sj">
+                <div class="modal-header modal-header-gray">
+                    <button type="button" class="close" data-dismiss="modal" title="Fechar Janela">&times;</button>
+                    <h4 class="modal-title">LOGIN</h4>
+                </div>
+                <div class="modal-body" style="background: rgb(245, 245, 245);">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <input type="text" id="txtlgn" class="cxtexto" placeholder="Nome">
+                            </td>
+                        </tr>
+                        <tr style="height: 10px;"></tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="txtsrn" class="cxtexto" placeholder="Senha">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer modal-footer-gray">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar Login">Cancelar</button>
+                    <button type="button" class="btn btn-primary" title="Efetuar Login" onclick="Logar();">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mdl_cad" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="mdl_sjvlt_tm">
+            <div class="modal-content" id="resize_sj">
+                <div class="modal-header modal-header-gray">
+                    <button type="button" class="close" data-dismiss="modal" title="Fechar Janela">&times;</button>
+                    <h4 class="modal-title">CADASTRO</h4>
+                </div>
+                <div class="modal-body" style="background: rgb(245, 245, 245);">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <input type="text" id="txtlgnc" class="cxtexto" placeholder="Nome">
+                            </td>
+                        </tr>
+                        <tr style="height: 10px;"></tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="txtsrnca" class="cxtexto" placeholder="Senha">
+                            </td>
+                        </tr>
+                        <tr style="height: 10px;"></tr>
+                        <tr>
+                            <td>
+                                <input type="password" id="txtsrncb" class="cxtexto" placeholder="Senha Novamente">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer modal-footer-gray">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar Login">Cancelar</button>
+                    <button type="button" class="btn btn-primary" title="Efetuar Cadastro" onclick="Cadastrar();">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mdl_mensagem" class="modal fade" role="dialog">
+        <div class="modal-dialog" id="mdl_sjvlt_tm">
+            <div class="modal-content" id="resize_sj">
+                <div class="modal-header modal-header-gray">
+                    <button type="button" class="close" data-dismiss="modal" title="Fechar Janela">&times;</button>
+                    <h4 class="modal-title">CÓDIGO DO SUCESSO</h4>
+                </div>
+                <div class="modal-body" style="background: rgb(245, 245, 245);">
+                    <div style="text-align: center;">
+                        <h3><span id="msgspn"></span></h3>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer-gray">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" title="OK">OK</button>
                 </div>
             </div>
         </div>
